@@ -8,4 +8,4 @@ function changeFontSize() {
   // console.log(spanEl.style.fontSize);
 }
 
-inputEl.addEventListener('input', changeFontSize);
+inputEl.addEventListener("input", changeFontSize);
