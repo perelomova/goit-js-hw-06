@@ -8,16 +8,15 @@ const inputEl = document.querySelector("#validation-input");
 
 
 function onBlurFunction() {
- 
-  // inputEl.classList = "";
 
     inputEl.classList.remove('valid', 'invalid');
 
-    inputEl.value.length == inputEl.dataset.length ? 
-      inputEl.classList.add('valid')
-    :
-      inputEl.classList.add('invalid');
-    
+  if (inputEl.value.length === parseInt(inputEl.dataset.length)) {
+    inputEl.classList.add('valid');
+  } else {
+    inputEl.classList.add('invalid');
+    }
+  
     console.log(inputEl.className);
   }
   

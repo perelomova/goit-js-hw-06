@@ -20,6 +20,7 @@ const ingredientsListMaker = ingredients.map(ingredient => {
   const ingredientsItemEl = document.createElement('li');
   ingredientsItemEl.textContent = ingredient;
   ingredientsItemEl.classList.add('item');
-  ingredientsListEl.append(ingredientsItemEl);
+  return ingredientsItemEl;
 });
+ingredientsListEl.append(...ingredientsListMaker);
 console.log(ingredientsListEl);
